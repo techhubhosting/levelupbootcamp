@@ -40,8 +40,8 @@ h2 {
     background-color: transparent;
     border-radius: 10px;
     width: 200px;
-    height: 70px;
-    font-size: 18px;
+    height: 60px;
+    font-size: 17px;
     color: black;
     font-weight: 800;
 }
@@ -59,7 +59,7 @@ h2 {
     border: none;
     width: 200px;
     height: 50px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
     background: linear-gradient(97.14deg, #75ffe6 7.11%, #6affb1 97.04%);
     border-radius: 10px;
@@ -71,11 +71,7 @@ h2 {
 }
 
 /* Media query to hide the element on devices with a max-width of 767px */
-@media (max-width: 767px) {
-    .custom-btn2 {
-        display: none;
-    }
-}
+
 .custom-btn2:hover {
     background-position: right center;
     /* change the direction of the change here */
@@ -470,9 +466,9 @@ hr {
 }
 
 .hero-sec .item-content .item-sub {
-    font-size: 18px;
+    font-size: 20px;
     color: #212121;
-    line-height: 18px;
+    line-height: 30px;
     margin-bottom: 70px;
 }
 
@@ -638,7 +634,7 @@ hr {
     font-family: "Outfit";
     font-weight: 600;
     font-size: 200px;
-    line-height: 80px;
+    line-height: 100px;
     color: rgba(255, 255, 255, 0.5);
     margin: -100px 0 0 -85px;
     z-index: -1;
@@ -1914,7 +1910,7 @@ hr {
 /* schedule sec start */
 
 .schedule-sec {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
 }
@@ -2060,6 +2056,7 @@ hr {
 .info-sec {
     position: relative;
     top: -100px;
+    bottom: -1px;
 }
 
 .info-sec .info-countdown {
@@ -2068,7 +2065,7 @@ hr {
     padding: 30px 0px;
     border-radius: 32px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     -webkit-box-shadow: 0px 40px 70px rgba(75, 3, 116, 0.15);
     box-shadow: 0px 40px 70px rgba(75, 3, 116, 0.15);
 }
