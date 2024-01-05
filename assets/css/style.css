@@ -39,9 +39,9 @@ h2 {
     border: 2px solid #6affb1;
     background-color: transparent;
     border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    font-size: 15px;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
     color: black;
     font-weight: 800;
 }
@@ -57,25 +57,31 @@ h2 {
 
 .custom-btn2 {
     border: none;
-    width: 150px;
+    width: 200px;
     height: 50px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 800;
     background: linear-gradient(97.14deg, #75ffe6 7.11%, #6affb1 97.04%);
     border-radius: 10px;
     text-align: center;
-    color: white;
+    color: black;
     -webkit-box-shadow: 0 0 2px #eee;
     box-shadow: 0 0 2px #eee;
     display: inline-block;
 }
 
+/* Media query to hide the element on devices with a max-width of 767px */
+@media (max-width: 767px) {
+    .custom-btn2 {
+        display: none;
+    }
+}
 .custom-btn2:hover {
     background-position: right center;
     /* change the direction of the change here */
     background-image: -webkit-gradient(linear, left top, right top, from(#7579FF), color-stop(51%, #73339a), to(#B224EF));
     background-image: linear-gradient(to right, white 0%, #0cccb1 51%, #6affb1 100%);
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -464,9 +470,9 @@ hr {
 }
 
 .hero-sec .item-content .item-sub {
-    font-size: 20px;
+    font-size: 18px;
     color: #212121;
-    line-height: 25px;
+    line-height: 18px;
     margin-bottom: 70px;
 }
 
@@ -632,7 +638,7 @@ hr {
     font-family: "Outfit";
     font-weight: 600;
     font-size: 200px;
-    line-height: 260px;
+    line-height: 80px;
     color: rgba(255, 255, 255, 0.5);
     margin: -100px 0 0 -85px;
     z-index: -1;
@@ -2092,7 +2098,7 @@ hr {
 .info-sec .info-countdown .counter-box li span {
     font-size: 22px;
     font-weight: 600;
-    color: #212121;
+    color: white;
     text-align: center;
 }
 
