@@ -1,0 +1,23 @@
+.logo-edit{
+    height: 55px;
+    width: 75px;
+}
+
+
+.popup-img{
+    border-radius: 20px;
+}
+.title{
+    color: white;
+}
+.form-label{
+    color: white;
+}
+.contact-wrap{
+    box-shadow: 0 0 20px 10px #6aff1b; /* Set the glow effect */
+    background-color: #fff; /* Set your card background color */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition to the glow effect */ 
+}
+.schedule-item{
+    background-color: white;
+}
