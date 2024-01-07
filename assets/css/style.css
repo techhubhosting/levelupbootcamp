@@ -42,14 +42,14 @@ h2 {
     width: 200px;
     height: 60px;
     font-size: 17px;
-    color: black;
+    color: white;
     font-weight: 650;
 }
 
 .custom-btn:hover {
     background-position: right center;
     /* change the direction of the change here */
-    color: #fff;
+    color: black;
     background-image: -webkit-gradient(linear, left top, right top, from(#75ffe6), color-stop(51%, #5bb04a), to(#6affb1));
     background-image: linear-gradient(to right, #75ffe6 0%, #0cccb1 51%, #6affb1 100%);
     border-color: transparent;
@@ -253,7 +253,7 @@ hr {
 }
 
 .header-area .header-nav.sticky {
-    background-color: #fff;
+    background-image: url("Footer.png");
     position: fixed !important;
     -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
@@ -467,7 +467,7 @@ hr {
 
 .hero-sec .item-content .item-sub {
     font-size: 20px;
-    color: #212121;
+    color: white;
     line-height: 30px;
     margin-bottom: 70px;
 }
@@ -635,7 +635,7 @@ hr {
     font-weight: 600;
     font-size: 200px;
     line-height: 100px;
-    color: rgba(255, 255, 255, 0.5);
+    color: #050718;
     margin: -100px 0 0 -85px;
     z-index: -1;
     position: relative;

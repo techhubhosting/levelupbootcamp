@@ -2,34 +2,7 @@
     height: 55px;
     width: 75px;
 }
-.outlined-text {
-    -webkit-text-stroke: 1px white; /* WebKit/Blink browsers */
-    text-stroke: 2px #0066cc; /* Standard syntax */
-    color: #fff; /* Set the text color */
-    display: inline-block;
-    padding: 5px; /* Add padding for better spacing */
-}
-.globe-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
 
-#rotating-globe {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    animation: rotate 10s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .popup-img{
     border-radius: 20px;
