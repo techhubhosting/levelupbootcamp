@@ -61,16 +61,18 @@
                    
                         </ul>
                         <div class="mode-and-button d-flex align-items-center">
-                         
-                            <button class="header-btn custom-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Access For Free!</button>
+                            <a href="#register">
+                            <button class="header-btn custom-btn2" >Get Access For Free!</button>
+                            </a>
                         </div>
                         </div>
 
                         <!-- mobile menu -->
                         <div class="mobile-view-header d-block d-lg-none d-flex gap-3 align-items-center">
                             <div class="me-md-3">
-                        
-                            <button class="header-btn custom-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Access For Free!</button>
+                                <a href="#register">
+                            <button class="header-btn custom-btn2" >Get Access For Free!</button>
+                            </a>
                         </div>
                         <!-- end mobile menu -->
 
@@ -98,8 +100,9 @@
                                                </b>
                                             </p>
                                             <div class="button-group">
-                                                <button class="custom-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Register For Free!</button>
-                                              
+                                                <a href="#register">
+                                                <button class="custom-btn2" >Register For Free!</button>
+                                              </a>
                                             </div>
                                             <img src="assets/images/dots/dots.png" alt="Shadow Image" class="dots-1 img-moving-anim3">
                                         </div>
@@ -190,7 +193,9 @@ Master the Forex Markets: Your Exclusive Passport to Financial Freedom!
              
                     </div>
                     <div class=" text-center py-3">
-                        <button class="custom-btn schedule-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Yes, I Want Free Access Now</button>
+                        <a href="#register">
+                        <button class="custom-btn schedule-btn" >Yes, I Want Free Access Now</button>
+                    </a>
                      </div>
                     <div class="dots img-moving-anim1">
                         <img src="assets/images/dots/dots2.png" alt="Shadow Image">
@@ -206,7 +211,7 @@ Master the Forex Markets: Your Exclusive Passport to Financial Freedom!
         </div>
 
         <!-- contact sec start -->
-        <section class="contact-sec" data-aos="zoom-in" data-aos-duration="1000">
+        <section class="contact-sec" data-aos="zoom-in" data-aos-duration="1000" id="register">
             <div class="container">
                 <div class="col-xl-5 section-head text-center m-auto mb-5">
                     <span class="label">Register Now!</span>
@@ -231,13 +236,10 @@ Master the Forex Markets: Your Exclusive Passport to Financial Freedom!
                             </div>
                         </div>
                         <div class="col-lg-8 mt-4 mt-lg-0">
-                            <form action="https://form2channel.com" method="POST" class="contact-form">
+                            <form method="POST" class="contact-form" id="form">
                                 <div class="row gy-3">
                                     <div class="col-lg-6">
-                                      
-                                        <input type="hidden" name="formto_googlesheets" value="winnermandan@gmail.com">
-                                        <input type="hidden" name="formto_redirect" value="https://t.me/thelevelledup">
-                                        <input name="formto_error" type="hidden" value="https://t.me/thelevelledup">
+                                        
                                         <label for="exampleFormControlInput1" class="form-label">First Name</label>
                                         <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Name">
                                     </div>
@@ -282,40 +284,36 @@ Master the Forex Markets: Your Exclusive Passport to Financial Freedom!
         <!-- Button trigger modal -->
 
         <!-- Modal 2 -->
-        <div class="modal  popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog popup-box-dialog modal-dialog-centered">
-                <div class="modal-content popup-box-content" style="background-image: url(assets/images/banner/Footer.png)";>
-                    <div class="popup-card" style="width:100%">
-                        <button type="button" class="btn popup2-btn  ms-auto" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-                        <img src="assets/images/logodark.webp" class="card-img-top popup-img" alt="popup-bg">
-                       
-                        <form action="https://form2channel.com" method="POST" class="popup-form">
-                            <div class="row gy-3 mb-3">
-                                <div class="col-lg-6">
-                                    
-                                    <input type="hidden" name="formto_googlesheets" value="winnermandan@gmail.com">
-                                    <input type="hidden" name="formto_redirect" value="https://t.me/thelevelledup">
-                                    <input name="formto_error" type="hidden" value="https://t.me/thelevelledup">
-                                    <label for="exampleFormControlInput5" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput5" name ="Name" placeholder="Your Full Name" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="exampleFormControlInput6" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput6" name ="Email" placeholder="Enter Email" required>
-                                </div>
-                        
-                            </div>
-                            <button class="custom-btn2">Register For Free</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
+
 
 
 
         </div>
         <!-- jquery -->
+        <script>
+  const form = document.querySelector("#form");
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyEBnEWyQ6Duzs_gYB5f5X9Sydxpgugl7ITXZJ5cx6otSfzXmnCMEIByuunTrLmhxe5/exec';
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  const responseBody = new FormData(form);
+  const TrendBody = responseBody.getAll("TRENDS").join(" ");
+  responseBody.set('TRENDS', TrendBody);
+
+  fetch(scriptURL, { method: 'POST', body: responseBody })
+    .then(response => {
+      // Redirect to another website after form submission
+      window.location.href = 'https://t.me/thelevelledup'; // Replace 'https://example.com' with the desired URL
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+    });
+});
+
+
+        </script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.countdown.min.js"></script>
         <!-- animation -->
