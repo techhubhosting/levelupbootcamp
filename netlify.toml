@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/"
+  to = "https://forexbullsacademy.com"
+  status = 301
+  force = true
